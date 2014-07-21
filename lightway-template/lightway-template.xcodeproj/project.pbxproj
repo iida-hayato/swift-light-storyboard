@@ -13,6 +13,9 @@
 		0BCDB35519779F67001A6A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BCDB35319779F67001A6A5E /* Main.storyboard */; };
 		0BCDB35719779F67001A6A5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BCDB35619779F67001A6A5E /* Images.xcassets */; };
 		0BCDB36319779F67001A6A5E /* lightway_templateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDB36219779F67001A6A5E /* lightway_templateTests.swift */; };
+		0BDD45F5197C4C0B0018958D /* AppNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD45F4197C4C0B0018958D /* AppNavigationViewController.swift */; };
+		0BDD45F7197C4F490018958D /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD45F6197C4F490018958D /* TopViewController.swift */; };
+		0BDD45F9197C55520018958D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDD45F8197C55520018958D /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		0BCDB35C19779F67001A6A5E /* lightway-templateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lightway-templateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BCDB36119779F67001A6A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BCDB36219779F67001A6A5E /* lightway_templateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightway_templateTests.swift; sourceTree = "<group>"; };
+		0BDD45F4197C4C0B0018958D /* AppNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationViewController.swift; sourceTree = "<group>"; };
+		0BDD45F6197C4F490018958D /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		0BDD45F8197C55520018958D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8125E2197C2FA400E6EBD6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0BDD45F6197C4F490018958D /* TopViewController.swift */,
+				0BCDB34F19779F67001A6A5E /* MasterViewController.swift */,
+				0BDD45F4197C4C0B0018958D /* AppNavigationViewController.swift */,
+				0BDD45F8197C55520018958D /* InfoViewController.swift */,
+				0BCDB35119779F67001A6A5E /* DetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		0BCDB33F19779F67001A6A5E = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +96,11 @@
 			isa = PBXGroup;
 			children = (
 				0BCDB34D19779F67001A6A5E /* AppDelegate.swift */,
-				0BCDB34F19779F67001A6A5E /* MasterViewController.swift */,
-				0BCDB35119779F67001A6A5E /* DetailViewController.swift */,
+				0B8125E2197C2FA400E6EBD6 /* ViewController */,
+				0BDD45FD197C90120018958D /* View */,
+				0BDD45FC197C900A0018958D /* Manager */,
+				0BDD45FA197C8FFA0018958D /* Model */,
+				0BDD45FB197C90050018958D /* Entity */,
 				0BCDB35319779F67001A6A5E /* Main.storyboard */,
 				0BCDB35619779F67001A6A5E /* Images.xcassets */,
 				0BCDB34B19779F67001A6A5E /* Supporting Files */,
@@ -110,6 +131,34 @@
 				0BCDB36119779F67001A6A5E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0BDD45FA197C8FFA0018958D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0BDD45FB197C90050018958D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		0BDD45FC197C900A0018958D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		0BDD45FD197C90120018958D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BDD45F5197C4C0B0018958D /* AppNavigationViewController.swift in Sources */,
 				0BCDB35219779F67001A6A5E /* DetailViewController.swift in Sources */,
 				0BCDB35019779F67001A6A5E /* MasterViewController.swift in Sources */,
 				0BCDB34E19779F67001A6A5E /* AppDelegate.swift in Sources */,
+				0BDD45F9197C55520018958D /* InfoViewController.swift in Sources */,
+				0BDD45F7197C4F490018958D /* TopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +451,7 @@
 				0BCDB36819779F67001A6A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BCDB36919779F67001A6A5E /* Build configuration list for PBXNativeTarget "lightway-templateTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +460,7 @@
 				0BCDB36B19779F67001A6A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
