@@ -21,13 +21,13 @@ class AppNavigationViewController: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-    func show_back(){
+    func showBack(){
         self.popViewControllerAnimated(true)
     }
-    func show_top(){
+    func showTop(){
         self.popToRootViewControllerAnimated(true)
     }
-    func show_info(sender:UIButton){
+    func showInfo(sender:UIButton){
             self.popToRootViewControllerAnimated(false)
             self.topViewController.performSegueWithIdentifier("showInfo", sender: nil)
     }

@@ -26,13 +26,13 @@ class TopViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func TouchBack(sender: UIButton) {
-        self.appNavigation?.show_back()
+        self.appNavigation?.showBack()
     }
     @IBAction func TouchTop(sender: UIButton) {
-        self.appNavigation?.show_top()
+        self.appNavigation?.showTop()
     }
     @IBAction func TouchInfo(sender: UIButton) {
-        self.appNavigation?.show_info(sender)
+        self.appNavigation?.showInfo(sender)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
