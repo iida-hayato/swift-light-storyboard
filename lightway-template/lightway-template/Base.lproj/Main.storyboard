@@ -79,13 +79,13 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
                                             <mask key="constraints">
                                                 <include reference="Feb-cV-wOh"/>
                                                 <include reference="jin-fK-rpw"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                        <variation key="heightClass=regular-widthClass=compact">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
                                         </variation>
                                     </imageView>
@@ -107,14 +107,14 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="11" y="20" width="172" height="55"/>
                                         </variation>
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="20" y="20" width="172" height="55"/>
+                                        </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="I7w-eM-2eo"/>
                                                 <include reference="epr-MC-X8F"/>
                                             </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
-                                            <rect key="frame" x="20" y="20" width="172" height="55"/>
                                         </variation>
                                         <connections>
                                             <action selector="TouchTop:" destination="otK-1H-XSb" eventType="touchUpInside" id="vIS-5O-3Fs"/>
@@ -138,10 +138,10 @@
                                     <mask key="constraints">
                                         <exclude reference="eAo-TZ-nBn"/>
                                         <exclude reference="gtS-0U-17Y"/>
-                                        <exclude reference="Id0-7h-CzE"/>
-                                        <exclude reference="Rox-aR-Vo0"/>
                                         <exclude reference="1ol-JW-LUg"/>
                                         <exclude reference="MLd-fC-E7n"/>
+                                        <exclude reference="Id0-7h-CzE"/>
+                                        <exclude reference="Rox-aR-Vo0"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" ambiguous="YES">
@@ -158,10 +158,10 @@
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
                                     <rect key="frame" x="0.0" y="534" width="320" height="106"/>
                                     <mask key="constraints">
-                                        <include reference="Id0-7h-CzE"/>
-                                        <include reference="Rox-aR-Vo0"/>
                                         <include reference="1ol-JW-LUg"/>
                                         <include reference="MLd-fC-E7n"/>
+                                        <include reference="Id0-7h-CzE"/>
+                                        <include reference="Rox-aR-Vo0"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -183,17 +183,17 @@
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="Tnd-9T-CKB"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="K1W-XT-tlk"/>
                                 <include reference="Tra-Bq-jtd"/>
                                 <include reference="NgO-1w-2m9"/>
                                 <include reference="DYd-hw-NNI"/>
                                 <include reference="NH8-F7-QuP"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Tnd-9T-CKB"/>
                             </mask>
                         </variation>
                     </view>
@@ -244,7 +244,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0PD-55-mYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1605" y="85.125"/>
+            <point key="canvasLocation" x="1416" y="191.625"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="Gx9-ET-VbQ">

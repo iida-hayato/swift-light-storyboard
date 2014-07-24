@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet var detailDescriptionLabel: UILabel
+    @IBOutlet var detailDescriptionLabel: UILabel!
 
 
     var detailItem: AnyObject? {

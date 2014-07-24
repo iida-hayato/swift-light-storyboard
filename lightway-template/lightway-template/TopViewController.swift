@@ -10,9 +10,9 @@ import UIKit
 
 class TopViewController: UIViewController {
 
-    @IBOutlet var btn_info: UIButton
-    @IBOutlet var btn_back: UIButton
-    @IBOutlet var btn_top: UIButton
+    @IBOutlet var btn_info: UIButton!
+    @IBOutlet var btn_back: UIButton!
+    @IBOutlet var btn_top: UIButton!
     
     var appNavigation:AppNavigationViewController?
     override func viewDidLoad() {
@@ -37,7 +37,7 @@ class TopViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         if (segue.identifier == "embedContainer") {
-            self.appNavigation = segue.destinationViewController as? AppNavigationViewController!
+            self.appNavigation = segue.destinationViewController as? AppNavigationViewController
         }
     }
 
