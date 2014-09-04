@@ -35,7 +35,7 @@ class TopViewController: UIViewController {
         self.appNavigation?.showInfo(sender)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "embedContainer") {
             self.appNavigation = segue.destinationViewController as? AppNavigationViewController
         }
